@@ -11,5 +11,5 @@
 #endif
 
 
-FOUNDATION_EXPORT double DummyVersionNumber;
-FOUNDATION_EXPORT const unsigned char DummyVersionString[];
+FOUNDATION_EXPORT double MyLibVersionNumber;
+FOUNDATION_EXPORT const unsigned char MyLibVersionString[];

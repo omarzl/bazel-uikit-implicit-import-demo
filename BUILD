@@ -4,10 +4,11 @@ swift_library(
     name = "MyLib",
     srcs = glob(["Sources/*.swift"]),
     copts = [
-        "-Xcc",
-        "-fmodule-map-file=Sources/Dummy.modulemap",
+      "-import-underlying-module",
+      "-Xcc",
+      "-fmodule-map-file=Sources/MyLib.modulemap",
     ],
-    data = ['Sources/Dummy.modulemap', 'Sources/Dummy-umbrella.h'],
+    data = ['Sources/MyLib.modulemap', 'Sources/MyLib-umbrella.h'],
     module_name = "MyLib",
     visibility = ["//visibility:public"],
 )
