@@ -1,0 +1,6 @@
+module Dummy {
+  umbrella header "Dummy-umbrella.h"
+
+  export *
+  module * { export * }
+}

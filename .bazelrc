@@ -1,0 +1,3 @@
+build --apple_platform_type=ios
+build --verbose_failures
+build --use_top_level_targets_for_symlinks
